@@ -13,5 +13,5 @@ jobs:
           password: ${{'T@k@hiro203'}}
           port: ${{22}}
           script: |
-            sudo su -
+            mkdir test
             ls -al
