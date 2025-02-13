@@ -14,3 +14,4 @@ jobs:
           port: ${{22}}
           script: |
             sudo su -
+            ls -al
