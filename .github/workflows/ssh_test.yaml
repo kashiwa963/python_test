@@ -1,0 +1,15 @@
+name: remote ssh command
+on: [push]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{34.205.225.227}}
+          username: linuxserver.io
+          password: ${{T@k@hiro203}}
+          port: ${{22}}
+          script: whoami
