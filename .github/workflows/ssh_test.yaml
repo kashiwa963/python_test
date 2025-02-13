@@ -12,4 +12,6 @@ jobs:
           username: ec2-user
           password: ${{'T@k@hiro203'}}
           port: ${{22}}
-          script: vmstat
+          script: |
+            sudo su -
+            cd jpetstore-6
