@@ -9,7 +9,7 @@ jobs:
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{'34.205.225.227'}}
-          username: linuxserver.io
+          username: ec2-user
           password: ${{'T@k@hiro203'}}
           port: ${{22}}
           script: whoami
