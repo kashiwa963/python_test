@@ -8,10 +8,8 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: ${{'34.205.225.227'}}
-          username: ec2-user
+          host: ${{'98.84.55.153'}}
+          username: root
           password: ${{'T@k@hiro203'}}
           port: ${{22}}
-          script: |
-            mkdir test
-            ls -al
+          script: vmstat
