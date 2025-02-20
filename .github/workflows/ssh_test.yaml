@@ -15,4 +15,3 @@ jobs:
           script: |
             cd jpetstore-6
             ./mvnw cargo:run -P tomcat90
-            
