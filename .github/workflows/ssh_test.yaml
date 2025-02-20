@@ -8,8 +8,10 @@ jobs:
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: ${{'98.84.55.153'}}
+          host: ${{'44.200.2.219'}}
           username: root
           password: ${{'T@k@hiro203'}}
           port: ${{22}}
-          script: ls
+          script: |
+            cd jpetstore-6
+            ./mvnw cargo:run -P tomcat90
